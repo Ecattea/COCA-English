@@ -1,14 +1,14 @@
 # 前言   
-本卡组是英英式卡组，即全英文环境，因此需要使用者有一定的英语基础。   
-建议使用者至少通过大学英语四级（CET-4）或者雅思4.5分或者托福35分。   
-本卡组不是收费项目，会在 Github 和 AnkiWeb 免费更新，其余版本（例如闲鱼、淘宝等）均为盗卖，请勿购买。   
-如果你认为本卡组有学习有所帮助，请在 AnkiWeb 点赞，或者给本仓库一个免费的 Star，你的支持是我持续维护的最大动力。   
-欢迎加入 Discord 群组: [点击此链接加入](https://discord.gg/H9yH6HXX)。   
-若你无法注册和使用 Discord，请加入 Telegram 群组：[点击此链接加入](https://t.me/+eVpK3pa3yahmMDlk)。   
+- 本卡组是英英式卡组，即全英文环境，因此需要使用者有一定的英语基础。   
+- 建议使用者至少通过大学英语四级（CET-4）或者雅思4.5分或者托福35分。   
+- 本卡组不是收费项目，会在 Github 和 AnkiWeb 免费更新，其余版本（例如闲鱼、淘宝等）均为盗卖，请勿购买。   
+- 如果你认为本卡组有学习有所帮助，请在 AnkiWeb 点赞，或者给本仓库一个免费的 Star，你的支持是我持续维护的最大动力。   
+- 欢迎加入 Discord 群组: [点击此链接加入](https://discord.gg/H9yH6HXX)。   
+- 若你无法注册和使用 Discord，请加入 Telegram 群组：[点击此链接加入](https://t.me/+eVpK3pa3yahmMDlk)。   
 # 简介
    
-本仓库发布的 **Anki 英语词汇卡组** 旨在让学习者在完全英文的语境中习得英语。所有提示、释义与例句均使用英文编写，帮助你在记忆单词的同时训练阅读与听力。   
-卡组遵循原子化原则：**每张卡片仅承载一个词条的一种释义或用法，配以例句和对应音频**。这种最小单位设计显著降低认知负担，提升记忆效率，并方便你在需要时对单个释义进行重新学习或编辑。   
+- 本仓库发布的 **Anki 英语词汇卡组** 旨在让学习者在完全英文的语境中习得英语。所有提示、释义与例句均使用英文编写，帮助你在记忆单词的同时训练阅读与听力。   
+- 卡组遵循原子化原则：**每张卡片仅承载一个词条的一种释义或用法，配以例句和对应音频**。这种最小单位设计显著降低认知负担，提升记忆效率，并方便你在需要时对单个释义进行重新学习或编辑。   
 > 一些解释 Anki 制卡原理的文章：   
 
 [Medium](https://disputant.medium.com/how-to-make-better-anki-flashcards-principles-for-high-yield-questions-d58cc7244a7c) \| [Blog from Soren Bjornstad](https://controlaltbackspace.org/precise/) \| [Blog from Jan Meppe](https://www.janmeppe.com/blog/atomic-anki-cards/)   
