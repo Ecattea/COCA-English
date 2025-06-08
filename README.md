@@ -1,6 +1,6 @@
-# README   
-   
+
 English \| 中文   
+
 # Preface   
 This flashcard deck is in an English-only environment, so users should have a certain level of English proficiency. It is recommended that users have passed the College English Test Band 4 (CET-4), IELTS 4.5, or TOEFL 35.   
 This deck is free and will be updated on GitHub and AnkiWeb. Any versions sold on other platforms (e.g., Xianyu, Taobao) are unauthorized; please do not purchase them.   
@@ -36,11 +36,17 @@ This minimal-unit design significantly reduces cognitive load, improves memoriza
    
 # Preview   
 ## Light Mode (Front / Back)   
-![Front Preview Light Mode](files/front-preview-light-mode.png)    
-![Back Preview Light Mode](files/back-preview-light-mode.png)    
-## Dark Mode (Front / Back)   
-![Front Preview Night Mode](files/front-preview-night-mode.png)    
-![Back Preview Night Mode](files/back-preview-night-mode.png)    
+<p align="center">
+  <img alt="Front Preview Light Mode" src="https://github.com/user-attachments/assets/d3a6f76a-eeb2-45d0-836e-ae89b0305cbe" width="500" />
+  <img alt="Back Preview Light Mode"  src="https://github.com/user-attachments/assets/bc80bd98-5a3d-4db8-a112-edffa51a31d6" width="500" />
+</p>
+
+## Night Mode (Front / Back)   
+<p align="center">
+  <img alt="Front Preview Night Mode" src="https://github.com/user-attachments/assets/ab49986a-d1ef-4008-9ae5-8102717b6526" width="500" />
+  <img alt="Back Preview Night Mode"  src="https://github.com/user-attachments/assets/2b356a3e-c813-4ec1-8d97-39895d049889" width="500" />
+</p>
+
 # Usage Guide   
 ## Download Anki   
 ### Desktop (Windows/macOS)   
