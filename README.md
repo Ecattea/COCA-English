@@ -1,5 +1,5 @@
 
-English \| 中文   
+[English](./README.md) | [中文](./README_CN.md)
 
 # Preface   
 This flashcard deck is in an English-only environment, so users should have a certain level of English proficiency. It is recommended that users have passed the College English Test Band 4 (CET-4), IELTS 4.5, or TOEFL 35.   
