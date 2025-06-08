@@ -75,7 +75,7 @@ Register and log in to an [AnkiWeb account](https://ankiweb.net/account/signup) 
 - @egg rolls, [Japanese-Chinese Vocabulary Deck](https://github.com/5mdld/anki-jlpt-decks), covering JLPT N1–N5 and additional vocabulary. (Only Chinese version)   
 - @菜鸡,  [Second Language Acquisition Guide to Learning Japanese](https://eaa9gdwuyv7.feishu.cn/wiki/YeOSwsG7giLuQxkcDFscUXVZn2f), recommended one-hour read. (Only Chinese version)   
    
-# Acknowledgments   
+# Special Thanks   
 Thanks to @egg rolls for sharing valuable experience and maintaining templates during deck creation.   
 Thanks to @KarasawaKoko for providing the online TTS service.   
 Thanks to all members of the group for feedback during testing, helping to continuously improve this deck.   
