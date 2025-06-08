@@ -2,16 +2,16 @@
 [English](./README.md) | [中文](./README_CN.md)
 
 # Preface   
-This flashcard deck is in an English-only environment, so users should have a certain level of English proficiency. It is recommended that users have passed the College English Test Band 4 (CET-4), IELTS 4.5, or TOEFL 35.   
-This deck is free and will be updated on GitHub and AnkiWeb. Any versions sold on other platforms (e.g., Xianyu, Taobao) are unauthorized; please do not purchase them.   
-If you find this deck helpful, please leave a thumbs up on Ankiweb, or give this repository a free **Star** on GitHub—your support is the greatest motivation for maintenance.   
-Join Discord Server to discuss and share your thoughts: [Click here to join](https://discord.gg/H9yH6HXX).   
-If you have trouble in using Discord, join Telegram Group instead (Mainly Chinese): [Click here to join](https://t.me/+eVpK3pa3yahmMDlk).   
+- This flashcard deck is in an English-only environment, so users should have a certain level of English proficiency. It is recommended that users have passed the College English Test Band 4 (CET-4), IELTS 4.5, or TOEFL 35.   
+- This deck is free and will be updated on GitHub and AnkiWeb. Any versions sold on other platforms (e.g., Xianyu, Taobao) are unauthorized; please do not purchase them.   
+- If you find this deck helpful, please leave a thumbs up on Ankiweb, or give this repository a free **Star** on GitHub—your support is the greatest motivation for maintenance.   
+- Join Discord Server to discuss and share your thoughts: [Click here to join](https://discord.gg/H9yH6HXX).   
+- If you have trouble in using Discord, join Telegram Group instead (Mainly Chinese): [Click here to join](https://t.me/+eVpK3pa3yahmMDlk).   
 # Overview   
-The **Anki English Vocabulary Deck** published in this repository is designed to help learners acquire English entirely in an English context.   
-All prompts, definitions, and example sentences are written in English, helping you train reading and listening skills while memorizing vocabulary.   
-Decks follow the principle of atomicity: **each card contains only one sense or usage of a single entry, accompanied by example sentences and corresponding audio**.   
-This minimal-unit design significantly reduces cognitive load, improves memorization efficiency, and makes it easy to relearn or edit individual senses when needed.   
+- The **Anki English Vocabulary Deck** published in this repository is designed to help learners acquire English entirely in an English context.   
+- All prompts, definitions, and example sentences are written in English, helping you train reading and listening skills while memorizing vocabulary.   
+- Decks follow the principle of atomicity: **each card contains only one sense or usage of a single entry, accompanied by example sentences and corresponding audio**.   
+- This minimal-unit design significantly reduces cognitive load, improves memorization efficiency, and makes it easy to relearn or edit individual senses when needed.   
 > Links to explain the principles of Anki cards:   
 
 [Medium](https://disputant.medium.com/how-to-make-better-anki-flashcards-principles-for-high-yield-questions-d58cc7244a7c) \| [Blog from Soren Bjornstad](https://controlaltbackspace.org/precise/) \| [Blog from Jan Meppe](https://www.janmeppe.com/blog/atomic-anki-cards/)   
