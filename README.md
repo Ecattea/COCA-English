@@ -1,2 +1,90 @@
-# COCA-English
-Top 5,000 high-frequency English lemmas (as ranked by COCA) in an English-only environment. Each atomic card presents a single sense, with expert-level definitions from Merriam-Webster’s Learner’s Dictionary and dual-track audio (native recordings + TTS) to boost both memorization and listening practice.
+# README   
+   
+English \| 中文   
+# Preface   
+This flashcard deck is in an English-only environment, so users should have a certain level of English proficiency. It is recommended that users have passed the College English Test Band 4 (CET-4), IELTS 4.5, or TOEFL 35.   
+This deck is free and will be updated on GitHub and AnkiWeb. Any versions sold on other platforms (e.g., Xianyu, Taobao) are unauthorized; please do not purchase them.   
+If you find this deck helpful, please leave a thumbs up on Ankiweb, or give this repository a free **Star** on GitHub—your support is the greatest motivation for maintenance.   
+Join Discord Server to discuss and share your thoughts: [Click here to join](https://discord.gg/H9yH6HXX).   
+If you have trouble in using Discord, join Telegram Group instead (Mainly Chinese): [Click here to join](https://t.me/+eVpK3pa3yahmMDlk).   
+# Overview   
+The **Anki English Vocabulary Deck** published in this repository is designed to help learners acquire English entirely in an English context.   
+All prompts, definitions, and example sentences are written in English, helping you train reading and listening skills while memorizing vocabulary.   
+Decks follow the principle of atomicity: **each card contains only one sense or usage of a single entry, accompanied by example sentences and corresponding audio**.   
+This minimal-unit design significantly reduces cognitive load, improves memorization efficiency, and makes it easy to relearn or edit individual senses when needed.   
+> Links to explain the principles of Anki cards:   
+
+[Medium](https://disputant.medium.com/how-to-make-better-anki-flashcards-principles-for-high-yield-questions-d58cc7244a7c) \| [Blog from Soren Bjornstad](https://controlaltbackspace.org/precise/) \| [Blog from Jan Meppe](https://www.janmeppe.com/blog/atomic-anki-cards/)   
+# Features   
+## Corpus-driven Vocabulary Ordering ([COCA](https://www.english-corpora.org/coca/))   
+- **Data Source:** Cards are ordered by frequency in the Corpus of Contemporary American English (COCA) from highest to lowest. COCA contains over one billion words across eight genres (blogs, general web pages, movie transcripts, spoken interviews, fiction, magazines, newspapers, academic writing), ensuring modernity and diversity in frequency data.   
+- **Lemmatization:** Forms such as *decide / decides / decided* are merged into a single lemma in COCA statistics, avoiding repetitive exposure to similar forms in early stages.   
+- **Scope:** The current version includes the top 5,000 high-frequency lemmas.   
+   
+> Future Plan: I intend to purchase additional data licenses to expand the scope to 60,000 lemmas, providing broader advancement space for advanced and translation-focused learners.   
+
+## Expert and Learner-friendly Definitions (Merriam-Webster's Learner's Dictionary with Audio)   
+- **Target Audience:** This dictionary is perfect for ESL, EFL, ELL, and TEFL learners, offering concise yet precise definitions.   
+- **Coverage:** Nearly 100,000 words and phrases, with 3,000 core vocabulary items specially marked for priority learning.   
+- **Example Sentences:** Over 160,000 contemporary examples covering spoken and written contexts; 22,000+ idioms, collocations, and fixed expressions to enhance authentic usage.   
+- **Consistency:** Unified formatting and labeling ensure a consistent style across cards, facilitating bulk editing and filtering.   
+   
+## High-fidelity Audio Support   
+- **Word Pronunciation:** Native-speaker recordings from Merriam-Webster ensure quality and accurate phonetic alignment.   
+- **Sentence Reading:** High-quality TTS synthesis with manually adjusted pacing, stress, and intonation, ideal for shadowing and listening practice.   
+- **Dual-track Audio:** Separate audio for word and example sentence, allowing focused listening or full sentence practice.   
+   
+# Preview   
+## Light Mode (Front / Back)   
+![Front Preview Light Mode](files/front-preview-light-mode.png)    
+![Back Preview Light Mode](files/back-preview-light-mode.png)    
+## Dark Mode (Front / Back)   
+![Front Preview Night Mode](files/front-preview-night-mode.png)    
+![Back Preview Night Mode](files/back-preview-night-mode.png)    
+# Usage Guide   
+## Download Anki   
+### Desktop (Windows/macOS)   
+- [Anki Official Site](https://apps.ankiweb.net/) \| [GitHub Releases](https://github.com/ankitects/anki/releases)   
+   
+### iOS/iPadOS: AnkiMobile Flashcards   
+- [App Store](https://apps.apple.com/jp/app/ankimobile-flashcards/id373493387)   
+   
+> Paid app: as of June 7, 2025, approximately $24.99 USD / ¥168 CNY / ¥4000 JPY / NT$790 / HK$188.   
+
+### Android: AnkiDroid   
+- [Play Store](https://play.google.com/store/apps/details?id=com.ichi2.anki) \| [GitHub Releases](https://github.com/ankidroid/Anki-Android/releases/latest)   
+   
+> Note: Do not use the version distributed by “Anki China”; it has compatibility issues!   
+
+## Download the Deck   
+Visit the Releases page to download the latest .apkg file.
+   
+## Import the Deck   
+Open Anki and click “Import File” at the bottom of the main window. Select the downloaded .apkg file.   
+### **Recommended Settings:**   
+Enable “Import any deck presets” during import to apply the settings used at the time of publication.   
+## Enable Sync (Optional but Recommended)   
+Register and log in to an [AnkiWeb account](https://ankiweb.net/account/signup) to sync progress and backup across devices for free.   
+# Friendly Links   
+- @egg rolls, [Japanese-Chinese Vocabulary Deck](https://github.com/5mdld/anki-jlpt-decks), covering JLPT N1–N5 and additional vocabulary. (Only Chinese version)   
+- @菜鸡,  [Second Language Acquisition Guide to Learning Japanese](https://eaa9gdwuyv7.feishu.cn/wiki/YeOSwsG7giLuQxkcDFscUXVZn2f), recommended one-hour read. (Only Chinese version)   
+   
+# Acknowledgments   
+Thanks to @egg rolls for sharing valuable experience and maintaining templates during deck creation.   
+Thanks to @KarasawaKoko for providing the online TTS service.   
+Thanks to all members of the group for feedback during testing, helping to continuously improve this deck.   
+# License   
+This deck is created by @Ecattea and released under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) license. You are free to use, copy, distribute, and adapt this deck under the following terms:   
+1. **Attribution (BY):**   
+    - You must credit the original author or repository name.   
+    - Include the project link when distributing or adapting.   
+    - If modified, indicate “Modified from original” prominently.   
+2. **Non-commercial (NC):**   
+    - Prohibit any commercial use, including but not limited to:   
+        - Selling this deck (or derivatives) for profit;   
+        - Integrating content into paywalled products or services;   
+        - Using content for commercial advertising or branding.   
+3. **ShareAlike (SA):**   
+    - If you remix, transform, or build upon this material, you must distribute your contributions under the same CC BY-NC-SA 4.0 license.   
+4. **No Additional Restrictions:**   
+    - You may not apply legal terms or technological measures that restrict others from exercising the rights granted by the license.   
