@@ -32,12 +32,18 @@
 - **双音轨配置**：同时附带单词与例句音频，方便分别进行精听或整体跟读。   
    
 # 预览   
-## 日间模式（前面/背面）   
-![Front Preview Light Mode](files/front-preview-light-mode.png)    
-![Back Preview Light Mode](files/back-preview-light-mode.png)    
-## 夜间模式（前面/背面）   
-![Front Preview Night Mode](files/front-preview-night-mode.png)    
-![Back Preview Night Mode](files/back-preview-night-mode.png)    
+## 日间模式 (前面 / 背面)   
+<p align="center">
+  <img alt="Front Preview Light Mode" src="https://github.com/user-attachments/assets/d3a6f76a-eeb2-45d0-836e-ae89b0305cbe" width="400" />
+  <img alt="Back Preview Light Mode"  src="https://github.com/user-attachments/assets/bc80bd98-5a3d-4db8-a112-edffa51a31d6" width="400" />
+</p>
+
+## 夜间模式 (前面 / 背面)   
+<p align="center">
+  <img alt="Front Preview Night Mode" src="https://github.com/user-attachments/assets/ab49986a-d1ef-4008-9ae5-8102717b6526" width="400" />
+  <img alt="Back Preview Night Mode"  src="https://github.com/user-attachments/assets/2b356a3e-c813-4ec1-8d97-39895d049889" width="400" />
+</p>
+
 # 如何使用   
 ## 下载 Anki   
 ### 桌面端（Windows/MacOS）   
