@@ -37,14 +37,14 @@ This minimal-unit design significantly reduces cognitive load, improves memoriza
 # Preview   
 ## Light Mode (Front / Back)   
 <p align="center">
-  <img alt="Front Preview Light Mode" src="https://github.com/user-attachments/assets/d3a6f76a-eeb2-45d0-836e-ae89b0305cbe" width="500" />
-  <img alt="Back Preview Light Mode"  src="https://github.com/user-attachments/assets/bc80bd98-5a3d-4db8-a112-edffa51a31d6" width="500" />
+  <img alt="Front Preview Light Mode" src="https://github.com/user-attachments/assets/d3a6f76a-eeb2-45d0-836e-ae89b0305cbe" width="400" />
+  <img alt="Back Preview Light Mode"  src="https://github.com/user-attachments/assets/bc80bd98-5a3d-4db8-a112-edffa51a31d6" width="400" />
 </p>
 
 ## Night Mode (Front / Back)   
 <p align="center">
-  <img alt="Front Preview Night Mode" src="https://github.com/user-attachments/assets/ab49986a-d1ef-4008-9ae5-8102717b6526" width="500" />
-  <img alt="Back Preview Night Mode"  src="https://github.com/user-attachments/assets/2b356a3e-c813-4ec1-8d97-39895d049889" width="500" />
+  <img alt="Front Preview Night Mode" src="https://github.com/user-attachments/assets/ab49986a-d1ef-4008-9ae5-8102717b6526" width="400" />
+  <img alt="Back Preview Night Mode"  src="https://github.com/user-attachments/assets/2b356a3e-c813-4ec1-8d97-39895d049889" width="400" />
 </p>
 
 # Usage Guide   
