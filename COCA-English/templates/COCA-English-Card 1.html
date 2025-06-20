@@ -1,0 +1,348 @@
+<article class="card">
+  <a href="https://www.merriam-webster.com/dictionary/{{Word}}" class="dictionary-logo-link" target="_blank" rel="noopener noreferrer" title="Look up on Merriam-Webster">
+    <img src="_logo-light.svg" alt="Webster Dictionary" class="dictionary-logo-img logo-light">
+    <img src="_logo-dark.svg" alt="Webster Dictionary" class="dictionary-logo-img logo-dark">
+  </a>
+  <!-- Card Header: Word Display -->
+  <header class="card-header">
+    <h1 class="word">{{Word}}</h1>
+    <span class="pos-badge {{^Part of Speech}}is-empty{{/Part of Speech}}">
+      {{#Part of Speech}}{{Part of Speech}}{{/Part of Speech}}
+      {{^Part of Speech}}&nbsp;{{/Part of Speech}}
+    </span>
+  </header>
+
+  <!-- Pronunciation and Audio -->
+  <section class="pronunciation-audio">
+    <span class="pronunciation">/{{Pronunciation/IPA}}/</span>
+       {{#Audio}}
+    <span class="audio-button" onclick="new Audio('{{Audio}}').play();">
+      <svg viewBox="0 0 24 24">
+        <path d="M5.25 9v6h4l5 5V4L9.25 9H5.25z M18.75 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+      </svg>
+    </span>
+    {{/Audio}}
+  </section>
+
+  <hr class="divider">
+
+  <!-- Example Sentences Section -->
+  <section class="examples-section">
+    <h2 class="section-title">Examples</h2>
+    <ul class="examples-list">
+      {{#Example 1}}<li class="example-item">{{Example 1}}</li>{{/Example 1}}
+      {{#Example 2}}<li class="example-item">{{Example 2}}</li>{{/Example 2}}
+      {{#Example 3}}<li class="example-item">{{Example 3}}</li>{{/Example 3}}
+    </ul>
+  </section>
+
+<script>
+  function cleanExampleSentenceForCoca(sentenceHTML) {
+    if (typeof sentenceHTML !== 'string' || !sentenceHTML) return "";
+    
+    let cleaned = sentenceHTML;
+    
+    cleaned = cleaned.replace(/\[.*?\]/g, '');
+
+    const equalsIndex = cleaned.indexOf('=');
+    if (equalsIndex !== -1) {
+      cleaned = cleaned.substring(0, equalsIndex);
+    }
+    
+    cleaned = cleaned.replace(/\s+/g, ' ');
+    return cleaned.trim();
+  }
+
+  function highlightWordInExamples() {
+    const wordElement = document.querySelector('.word');
+    if (!wordElement) return;
+    
+    const targetWord = wordElement.textContent || wordElement.innerText || '';
+    if (!targetWord) return;
+    
+    const cleanWord = targetWord.toLowerCase().trim();
+    if (!cleanWord) return;
+    
+    const generateVariations = (word) => {
+      const variations = [word];
+      
+      if (word.endsWith('y') && word.length > 2 && !'aeiou'.includes(word[word.length - 2])) {
+        variations.push(word.slice(0, -1) + 'ies');
+      } else if (word.endsWith('s') || word.endsWith('sh') || word.endsWith('ch') || word.endsWith('x') || word.endsWith('z')) {
+        variations.push(word + 'es');
+      } else {
+        variations.push(word + 's');
+      }
+      
+      if (word.endsWith('e')) {
+        variations.push(word + 'd', word + 'r', word + 'rs');
+        variations.push(word.slice(0, -1) + 'ing');
+      } else {
+        variations.push(word + 'ed', word + 'er', word + 'ers');
+        variations.push(word + 'ing');
+        if (word.length >= 3 && !'aeiou'.includes(word[word.length - 1]) && 'aeiou'.includes(word[word.length - 2])) {
+          const lastChar = word[word.length - 1];
+          variations.push(word + lastChar + 'ing', word + lastChar + 'ed');
+        }
+      }
+      
+      if (word.length <= 6) {
+        if (word.endsWith('y')) {
+          variations.push(word.slice(0, -1) + 'ier', word.slice(0, -1) + 'iest');
+        } else if (word.endsWith('e')) {
+          variations.push(word + 'r', word + 'st');
+        } else {
+          variations.push(word + 'er', word + 'est');
+        }
+      }
+      
+      return [...new Set(variations)];
+    };
+    
+    const wordVariations = generateVariations(cleanWord);
+    const pattern = '\\b(' + wordVariations.map(v => v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')\\b';
+    const regex = new RegExp(pattern, 'gi');
+    
+    document.querySelectorAll('.example-item').forEach(item => {
+      const originalHTML = item.innerHTML;
+      
+      if (!item.querySelector('em')) {
+        const highlightedHTML = originalHTML.replace(regex, '<em>$1</em>');
+        if (originalHTML !== highlightedHTML) {
+          item.innerHTML = highlightedHTML;
+        }
+        return;
+      }
+      
+      const emTags = [];
+      let tempHTML = originalHTML.replace(/<em[^>]*>.*?<\/em>/gi, (match) => {
+        const placeholder = `__EM_PLACEHOLDER_${emTags.length}__`;
+        emTags.push(match);
+        return placeholder;
+      });
+      
+      tempHTML = tempHTML.replace(regex, '<em>$1</em>');
+      
+      emTags.forEach((tag, index) => {
+        tempHTML = tempHTML.replace(`__EM_PLACEHOLDER_${index}__`, tag);
+      });
+      
+      if (originalHTML !== tempHTML) {
+        item.innerHTML = tempHTML;
+      }
+    });
+  }
+
+  function applyCocaExampleCleaning() {
+    const exampleItems = document.querySelectorAll('article.card .examples-section .example-item');
+    exampleItems.forEach(item => {
+      if (item.innerHTML) {
+        const originalHTML = item.innerHTML;
+        const cleanedHTML = cleanExampleSentenceForCoca(originalHTML);
+        if (originalHTML !== cleanedHTML) {
+          item.innerHTML = cleanedHTML;
+        }
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      applyCocaExampleCleaning();
+      highlightWordInExamples();
+    });
+  } else {
+    applyCocaExampleCleaning();
+    highlightWordInExamples();
+  }
+</script>
+
+</article>
+<article class="card">
+  <a href="https://www.merriam-webster.com/dictionary/{{Word}}" class="dictionary-logo-link" target="_blank" rel="noopener noreferrer" title="Look up on Merriam-Webster">
+    <img src="_logo-light.svg" alt="Webster Dictionary" class="dictionary-logo-img logo-light">
+    <img src="_logo-dark.svg" alt="Webster Dictionary" class="dictionary-logo-img logo-dark">
+  </a>
+  <!-- Card Header: Word + Part of Speech -->
+  <header class="card-header">
+    <h1 class="word">{{Word}}</h1>
+    <span class="pos-badge {{^Part of Speech}}is-empty{{/Part of Speech}}">
+      {{#Part of Speech}}{{Part of Speech}}{{/Part of Speech}}
+      {{^Part of Speech}}&nbsp;{{/Part of Speech}}
+    </span>
+  </header>
+
+  <!-- Pronunciation and Audio -->
+  <section class="pronunciation-audio">
+    <span class="pronunciation">/{{Pronunciation/IPA}}/</span>
+    {{#Audio}}
+    <span class="audio-button" onclick="new Audio('{{Audio}}').play();">
+      <svg viewBox="0 0 24 24">
+        <path d="M5.25 9v6h4l5 5V4L9.25 9H5.25z M18.75 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+      </svg>
+    </span>
+    {{/Audio}}
+  </section>
+
+  <!-- Grammar Information (if it exists) -->
+  {{#Grammar}}
+  <div class="grammar">{{Grammar}}</div>
+  {{/Grammar}}
+
+  <hr class="divider">
+
+  <!-- Definition Section -->
+  <section class="definition-section">
+    <h2 class="section-title">Definition</h2>
+    <div class="definition-content">{{Definition}}</div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Example Sentences Section -->
+  <section class="examples-section">
+    <h2 class="section-title">Examples</h2>
+    <ul class="examples-list">
+      {{#Example 1}}
+      <li class="example-sentence">
+        <span class="example-item">{{Example 1}}</span>
+        <div class="example-audio"></div>
+      </li>
+      {{/Example 1}}
+      {{#Example 2}}
+      <li class="example-sentence">
+        <span class="example-item">{{Example 2}}</span>
+        <div class="example-audio"></div>
+      </li>
+      {{/Example 2}}
+      {{#Example 3}}
+      <li class="example-sentence">
+        <span class="example-item">{{Example 3}}</span>
+        <div class="example-audio"></div>
+      </li>
+      {{/Example 3}}
+    </ul>
+  </section>
+</article>
+
+<script>
+  function cleanExampleSentenceForCoca(sentenceHTML) {
+    if (typeof sentenceHTML !== 'string' || !sentenceHTML) return "";
+    let cleaned = sentenceHTML;
+    cleaned = cleaned.replace(/\s+/g, ' ');
+    return cleaned.trim();
+  }
+
+  function applyCocaExampleCleaning() {
+    const exampleItems = document.querySelectorAll('article.card .examples-section .example-item');
+    exampleItems.forEach(item => {
+      if (item.innerHTML) {
+        const originalHTML = item.innerHTML;
+        const cleanedHTML = cleanExampleSentenceForCoca(originalHTML);
+        if (originalHTML !== cleanedHTML) {
+          item.innerHTML = cleanedHTML;
+        }
+      }
+    });
+  }
+
+  function setExampleTTS() {
+    const ttsConfig = {
+      domain: [
+        'https://anki-eng.0w0.live/', 
+        'https://ms-ra-forwarder-for-ifreetime-v9q1.vercel.app/',
+      ],
+      params: {
+        speed: -4,
+      }
+    };
+
+    const getVoice = () => {
+      const voices = [
+        'en-US-AnaNeural',
+        'en-US-AriaNeural',
+        'en-US-EmmaNeural',
+        'en-US-JennyNeural',
+        'en-US-ChristopherNeural',
+        'en-US-EricNeural',
+        'en-US-GuyNeural',
+        'en-US-MichelleNeural',
+        'en-US-SteffanNeural'
+      ];
+      return voices[Date.now() % voices.length];
+    };
+
+
+    const getExampleText = (exampleElement) => {
+      if (!exampleElement) return '';
+      let text = exampleElement.textContent || exampleElement.innerText || '';
+      
+      text = text.replace(/\[.*?\]/g, ''); 
+      
+      const equalsIndex = text.indexOf('=');
+      if (equalsIndex !== -1) {
+        text = text.substring(0, equalsIndex);
+      }
+      
+      text = text.replace(/\s+/g, ' '); 
+      return text.trim();
+    };
+
+    document.querySelectorAll('.example-sentence').forEach((sentence, index) => {
+      const exampleItem = sentence.querySelector('.example-item');
+      const audioContainer = sentence.querySelector('.example-audio');
+      
+      if (!exampleItem || !audioContainer) return;
+      
+      const text = getExampleText(exampleItem);
+      if (!text) return;
+
+      const queryString = new URLSearchParams({
+        ...ttsConfig.params,
+        text: text,
+        voiceName: getVoice()
+      });
+      
+      audioContainer.innerHTML = '';
+
+      const audio = document.createElement('audio');
+      audio.preload = 'none';
+      
+      ttsConfig.domain.forEach(url => {
+        const source = document.createElement('source');
+        source.src = `${url}api/aiyue?${queryString}`;
+        source.type = 'audio/mpeg';
+        audio.appendChild(source);
+      });
+
+      audioContainer.appendChild(audio);
+      audioContainer.insertAdjacentHTML(
+        'beforeend',
+        '<a class="tts-button audio-button soundLink"><svg viewBox="0 0 24 24"><path d="M5.25 9v6h4l5 5V4L9.25 9H5.25z M18.75 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg></a>'
+      );
+
+      audioContainer.querySelector('.tts-button').addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelectorAll('article.card audio').forEach(a => a !== audio && !a.paused && a.pause());
+        audio.currentTime = 0;
+        audio.play();
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      applyCocaExampleCleaning();
+      setExampleTTS();
+      if (typeof highlightWordInExamples === 'function') {
+        highlightWordInExamples();
+      }
+    });
+  } else {
+    applyCocaExampleCleaning();
+    setExampleTTS();
+    if (typeof highlightWordInExamples === 'function') {
+      highlightWordInExamples();
+    }
+  }
+</script>
