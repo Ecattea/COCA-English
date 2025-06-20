@@ -21,7 +21,7 @@
 - **Scope:** The current version includes the top 5,000 high-frequency lemmas.   
    
 > Future Plan: I intend to purchase additional data licenses to expand the scope to 60,000 lemmas, providing broader advancement space for advanced and translation-focused learners.   
- 
+  
 ## Expert and Learner-friendly Definitions (Merriam-Webster's Learner's Dictionary with Audio)   
 - **Target Audience:** This dictionary is perfect for ESL, EFL, ELL, and TEFL learners, offering concise yet precise definitions.   
 - **Coverage:** Nearly 100,000 words and phrases, with 3,000 core vocabulary items specially marked for priority learning.   
