@@ -11,7 +11,7 @@
 - All prompts, definitions, and example sentences are written in English, helping you train reading and listening skills while memorizing vocabulary.   
 - Decks follow the principle of atomicity: **each card contains only one sense or usage of a single entry, accompanied by example sentences and corresponding audio**.   
 - This minimal-unit design significantly reduces cognitive load, improves memorization efficiency, and makes it easy to relearn or edit individual senses when needed.   
-> Links to explain the principles of Anki cards:   
+> Links to explain the principles of Anki cards:  
 
 [Medium](https://disputant.medium.com/how-to-make-better-anki-flashcards-principles-for-high-yield-questions-d58cc7244a7c) \| [Blog from Soren Bjornstad](https://controlaltbackspace.org/precise/) \| [Blog from Jan Meppe](https://www.janmeppe.com/blog/atomic-anki-cards/)   
 # Features   
