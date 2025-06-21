@@ -14,6 +14,16 @@
 > Links to explain the principles of Anki cards:  
   
 [Medium](https://disputant.medium.com/how-to-make-better-anki-flashcards-principles-for-high-yield-questions-d58cc7244a7c) \| [Blog from Soren Bjornstad](https://controlaltbackspace.org/precise/) \| [Blog from Jan Meppe](https://www.janmeppe.com/blog/atomic-anki-cards/)   
+
+## Recommended Study Philosophy
+❗ **Don’t memorise the full definition.**  
+Use each card in a “guess → check → refine” cycle:
+1. **Front side:** Read the example sentence(s) and infer the word’s meaning from context.  
+2. **Back side:** Reveal the concise definition and compare it with your guess.  
+   - If they match, great—move on.  
+   - If they differ, reread the sentence and note which contextual clues you overlooked.  
+3. **Goal:** Recognise and understand the word in real-world use; precise recitation of the dictionary wording is unnecessary.
+
 # Features   
 ## Corpus-driven Vocabulary Ordering ([COCA](https://www.english-corpora.org/coca/))   
 - **Data Source:** Cards are ordered by frequency in the Corpus of Contemporary American English (COCA) from highest to lowest. COCA contains over one billion words across eight genres (blogs, general web pages, movie transcripts, spoken interviews, fiction, magazines, newspapers, academic writing), ensuring modernity and diversity in frequency data.   
