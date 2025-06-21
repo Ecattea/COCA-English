@@ -5,12 +5,21 @@
 - 如果你认为本卡组有学习有所帮助，请在 AnkiWeb 点赞，或者给本仓库一个免费的 Star，你的支持是我持续维护的最大动力。   
 - 欢迎加入 Telegram 群组进行反馈和分享你的想法：[点击此链接加入](https://t.me/+eVpK3pa3yahmMDlk)。   
 # 简介
-   
 - 本仓库发布的 **Anki 英语词汇卡组** 旨在让学习者在完全英文的语境中习得英语。所有提示、释义与例句均使用英文编写，帮助你在记忆单词的同时训练阅读与听力。   
 - 卡组遵循原子化原则：**每张卡片仅承载一个词条的一种释义或用法，配以例句和对应音频**。这种最小单位设计显著降低认知负担，提升记忆效率，并方便你在需要时对单个释义进行重新学习或编辑。   
 > 一些解释 Anki 制卡原理的文章：   
 
 [Medium](https://disputant.medium.com/how-to-make-better-anki-flashcards-principles-for-high-yield-questions-d58cc7244a7c) \| [Blog from Soren Bjornstad](https://controlaltbackspace.org/precise/) \| [Blog from Jan Meppe](https://www.janmeppe.com/blog/atomic-anki-cards/)   
+
+## 建议的学习方法
+❗ **不要死记整段释义。**  
+把每张卡片当作「猜测 → 核对 → 调整」的循环：
+1. **正面：** 阅读例句，凭语境猜测单词含义。  
+2. **背面：** 打开简明释义，与自己的猜测对照。  
+   - 如果一致，继续下一张；  
+   - 如果不一致，重读例句，找出遗漏的语境线索。  
+3. **目标：** 能在真实语境中识别并理解该词，而非逐字背诵字典解释。
+
 # 特点   
 ## 语料库驱动的词汇排序（[COCA](https://www.english-corpora.org/coca/)）   
 - **数据来源**：卡组按 Corpus of Contemporary American English (COCA) 的词频从高到低排序。COCA 规模超十亿词，覆盖八大体裁（博客、一般网页、影视对白、口语访谈、文学小说、杂志、报纸、学术文献），保证频率数据兼具现代性与多样性。   
